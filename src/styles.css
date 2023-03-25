@@ -1,0 +1,91 @@
+body {
+  background-color: #010006;
+  color: #e5edf3;
+}
+
+/* Base class for all containers */
+.container {
+  background-color: #010001;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 3vw;
+  color: #e5edf3;
+}
+
+.container-face {
+  box-shadow: 0 0 1.2vw 0.7vw #215737FF;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 17%;
+}
+
+/* Specific class for Container A */
+.container-a {
+  background-image: url("assets/naomi.png");
+  position: relative;
+  background-color: #215737;
+}
+
+.container-a .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #28e77b;
+  opacity: 0.25;
+}
+
+/* Specific class for Container B */
+.container-b {
+  /* background-color: #141e1b; */
+  width: 50%;
+  z-index: -1;
+}
+
+/* Specific class for Container C */
+.container-c {
+  position: relative;
+}
+
+.container-c .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #28e77b;
+  opacity: 0.25;
+}
+
+
+/* Specific class for Container D */
+.container-d {
+  background-color: #010001;
+  height: 20%;
+}
+
+
+.container-bottom {
+  /* border: 20px solid #141e1b; */
+  /* background-color: #2B2B2B; */
+  height: 20%;
+  /* width: 100%; */
+  margin: 10%;
+  text-align: left;
+  vertical-align: middle;
+  justify-content: center;
+  font-size: 4vw;
+  color: #e5edf3;
+  margin-top: 5%;
+  font-family: 'Nortar', sans-serif;
+}
+
+.container-wrapper {
+  margin-top: 10%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
